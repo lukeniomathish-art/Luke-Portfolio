@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">My Portfolio</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkModeToggle" aria-label="Toggle Dark Mode">🌙</button>
+      <button id="menuToggle" class="menu-toggle" aria-label="Toggle Menu">☰</button>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h1>Hello, I'm <span>Lukenio Mathish</span></h1>
+    <p>A passionate web developer building clean and modern websites.</p>
+    <div class="profile-pic">
+      <img src="https://i.ibb.co/L7rDzPH/profile.jpg" alt="My Photo" />
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="filter-buttons">
+      <button data-filter="all">All</button>
+      <button data-filter="web">Web</button>
+      <button data-filter="app">App</button>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card" data-category="web">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio site.</p>
+      </div>
+      <div class="project-card" data-category="app">
+        <h3>Todo App</h3>
+        <p>A simple task manager app.</p>
+      </div>
+      <div class="project-card" data-category="web">
+        <h3>Project Presentation</h3>
+        <p>Slide deck overview of my work.</p>
+        <div class="iframe-container">
+          <iframe src="https://docs.google.com/presentation/d/18brim1UccYqPw_IsimRs7KvNyZkafcrD/embed?start=false&loop=false&delayms=3000"
+                  frameborder="0"
+                  allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Your Name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" placeholder="Your Email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Lukenio Mathish | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
